@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ambiente virtual
+venv/
+env/
+
+# Configurações do IDE
+.idea/
+.vscode/
+
+# Arquivos de log
+*.log
+
+# Arquivos temporários
+*~
+.DS_Store
+Thumbs.db
+
+# Cache
+.pytest_cache/
+
+# Arquivos de backup
+*.bak
+*.tmp
