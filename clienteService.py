@@ -58,7 +58,7 @@ class Cliente:
       
       clientes.remove(cliente_encontrado)
 
-      print(f"Cliente {cliente_encontrado["nome"]} removido com sucesso!")
+      print(f"Cliente {cliente_encontrado['nome']} removido com sucesso!")
       break
 
   def consultarCliente(self):

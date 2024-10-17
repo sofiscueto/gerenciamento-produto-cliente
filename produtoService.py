@@ -33,13 +33,13 @@ class Produto:
           self.consultarProduto(self.TODOS)
           continue
       
-      print(f"Dados atuais do produto: {produto_encontrado['id']} - {produto_encontrado['nome']}")
+      print(f"Dados atuais do produto: {produto_encontrado['id']} - {produto_encontrado['descricao']}")
 
       novo_nome = input("Digite o novo nome do produto: ")
 
-      produto_encontrado['nome'] = novo_nome
+      produto_encontrado['descricao'] = novo_nome
 
-      print(f"Produto atualizado: {produto_encontrado['id']} - {produto_encontrado['nome']}")
+      print(f"Produto atualizado: {produto_encontrado['id']} - {produto_encontrado['descricao']}")
       break
 
   def removerProduto(self):
@@ -59,7 +59,7 @@ class Produto:
       
       produtos.remove(produto_encontrado)
 
-      print(f"Produto {produto_encontrado["descricao"]} removido com sucesso!")
+      print(f"Produto {produto_encontrado['descricao']} removido com sucesso!")
       break
 
   def consultarProduto(self):
@@ -68,10 +68,10 @@ class Produto:
     
     if isinstance(id, str) and id.upper() == "TODOS":
       for produto in produtos:  
-        print(f"{produto['id']} - {produto['nome']}")
+        print(f"{produto['id']} - {produto['descricao']}")
     else:  
       produto = self.consultarProdutoPorId(id)
-      print(f"Dados do produto: {produto['id']} - {produto['nome']}")
+      print(f"Dados do produto: {produto['id']} - {produto['descricao']}")
     
   def consultarProdutoPorId(self, id):
     try:
