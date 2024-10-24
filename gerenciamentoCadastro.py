@@ -1,3 +1,4 @@
+
 from clienteService import Cliente
 from produtoService import Produto
 from autenticacaoService import Autenticacao
